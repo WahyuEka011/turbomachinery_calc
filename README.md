@@ -48,30 +48,30 @@ turbomachinery_calc/
 
 ### 📚 Penjelasan Teknis
 Rust Backend:
-    >) Berisi logika ANN.
-    >) Data inputan berupa fitur-fitur turbin.
-    >) Output berupa string hasil prediksi ("Normal", "Maintenance", atau "Fail").
+    1. Berisi logika ANN.
+    2. Data inputan berupa fitur-fitur turbin.
+    3. Output berupa string hasil prediksi ("Normal", "Maintenance", atau "Fail").
 
 Qt Frontend:
-    >) Dibangun menggunakan Qt5 Widgets.
-    >) Mengambil inputan dari user.
-    >) Memanggil fungsi dari library Rust via FFI (extern "C").
-    >) Menampilkan hasil prediksi di tampilan GUI.
+    1. Dibangun menggunakan Qt5 Widgets.
+    2. Mengambil inputan dari user.
+    3. Memanggil fungsi dari library Rust via FFI (extern "C").
+    4. Menampilkan hasil prediksi di tampilan GUI.
 
 Integrasi Rust dan Qt:
-    >) Rust meng-compile kode menjadi .so (shared object library).
-    >) Qt menggunakan CMakeLists.txt untuk link ke libturbomachinery_calc.so.
-    >) Fungsi Rust diekspor ke Qt menggunakan deklarasi extern "C".
+    1. Rust meng-compile kode menjadi .so (shared object library).
+    2. Qt menggunakan CMakeLists.txt untuk link ke libturbomachinery_calc.so.
+    3. Fungsi Rust diekspor ke Qt menggunakan deklarasi extern "C".
 
 ### ⚙️ Dependensi
->) Rust (stable version)
->) Cargo (built-in Rust package manager)
->) Qt5 (qtbase5-dev, qt5-qmake, qttools5-dev-tools)
->) CMake (versi 3.5 ke atas)
+1. Rust (stable version)
+2. Cargo (built-in Rust package manager)
+3. Qt5 (qtbase5-dev, qt5-qmake, qttools5-dev-tools)
+4. CMake (versi 3.5 ke atas)
 
 Semua ini sudah tersedia otomatis di GitHub Codespaces, jadi kamu tinggal jalankan!
 
 ### ✨ Catatan
->) Setiap kali kamu mengubah kode di rust_backend, jangan lupa build ulang cargo build --release supaya file .so terupdate.
->) Untuk mendebug error saat build Qt, lihat bagian error make di terminal Codespaces.
->) Jika tampilan GUI tidak muncul di Codespaces GUI secara default, jalankan Codespaces > Ports > Forward Port di menu.
+1. Setiap kali kamu mengubah kode di rust_backend, jangan lupa build ulang cargo build --release supaya file .so terupdate.
+2. Untuk mendebug error saat build Qt, lihat bagian error make di terminal Codespaces.
+3. Jika tampilan GUI tidak muncul di Codespaces GUI secara default, jalankan Codespaces > Ports > Forward Port di menu.
