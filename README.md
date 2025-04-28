@@ -47,18 +47,18 @@ turbomachinery_calc/
     Prediksi juga menampilkan grafik!
 
 ### 📚 Penjelasan Teknis
-Rust Backend:
+A. Rust Backend:
     1. Berisi logika ANN.
     2. Data inputan berupa fitur-fitur turbin.
     3. Output berupa string hasil prediksi ("Normal", "Maintenance", atau "Fail").
 
-Qt Frontend:
+B. Qt Frontend:
     1. Dibangun menggunakan Qt5 Widgets.
     2. Mengambil inputan dari user.
     3. Memanggil fungsi dari library Rust via FFI (extern "C").
     4. Menampilkan hasil prediksi di tampilan GUI.
 
-Integrasi Rust dan Qt:
+C. Integrasi Rust dan Qt:
     1. Rust meng-compile kode menjadi .so (shared object library).
     2. Qt menggunakan CMakeLists.txt untuk link ke libturbomachinery_calc.so.
     3. Fungsi Rust diekspor ke Qt menggunakan deklarasi extern "C".
