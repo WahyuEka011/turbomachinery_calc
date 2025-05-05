@@ -25,7 +25,7 @@ turbomachinery_calc/
 
 ### 🚀 Cara Menjalankan Proyek (Via GitHub Codespaces)
 1. Buka GitHub repository ini.
-2. Klik tombol <> Code → pilih Open in Codespaces → buat Codespace baru.
+2. Klik tombol <> Code → pilih Open in Codespaces → pilih "CODESPACE_TURBOMACHINERY"
 3. Setelah Codespace terbuka:
    // Pastikan posisi di direktori project utama
       cd turbomachinery_calc
@@ -75,3 +75,50 @@ Semua ini sudah tersedia otomatis di GitHub Codespaces, jadi kamu tinggal jalank
 1. Setiap kali kamu mengubah kode di rust_backend, jangan lupa build ulang cargo build --release supaya file .so terupdate.
 2. Untuk mendebug error saat build Qt, lihat bagian error make di terminal Codespaces.
 3. Jika tampilan GUI tidak muncul di Codespaces GUI secara default, jalankan Codespaces > Ports > Forward Port di menu.
+
+### 📚 REFERENSI
+2013 IEEE International Conference on Automation Science and Engineering (CASE). 2013.
+Assagaf, Idrus, Jonri Lomi Ga, Agus Sukandi, Abdul Azis Abdillah, dan Samsul Arifin. 2023.
+1 Recent in Engineering Science and Technology Machine Predictive Maintenance by
+Using Support Vector Machines.
+
+Guo, Gongde, Hui Wang, David Bell, Yaxin Bi, dan Kieran Greer. 2003. 2888 LNCS KNN
+Model-Based Approach in Classification.
+
+Han, Hyoil, Seungjin Lim, Kyoungwon Suh, Seonghyun Park, Seong Je Cho, dan Minkyu
+Park. 2020. “Enhanced android malware detection: An SVM-based machine learning
+approach.” Dalam Proceedings - 2020 IEEE International Conference on Big Data and
+Smart Computing, BigComp 2020, Institute of Electrical and Electronics Engineers Inc.,
+75–81. doi:10.1109/BigComp48618.2020.00-96.
+
+Putra, Ikhsan Fachriansyah, Mahdhivan Syafwan, Monika Rianti Helmi, dan Admi Nazra.
+2023a. “BENTUK EKSPLISIT RUMUS BEDA MAJU DAN BEDA MUNDUR UNTUK
+TURUNAN KE-N DENGAN ORDE KETELITIAN KE-N BERDASARKAN DERET
+TAYLOR.” Jurnal Lebesgue : Jurnal Ilmiah Pendidikan Matematika, Matematika dan
+Statistika 4(3): 1675–86. doi:10.46306/lb.v4i3.461.
+
+Putra, Ikhsan Fachriansyah, Mahdhivan Syafwan, Monika Rianti Helmi, dan Admi Nazra.
+2023b. “BENTUK EKSPLISIT RUMUS BEDA MAJU DAN BEDA MUNDUR UNTUK
+TURUNAN KE-N DENGAN ORDE KETELITIAN KE-N BERDASARKAN DERET
+TAYLOR.” Jurnal Lebesgue : Jurnal Ilmiah Pendidikan Matematika, Matematika dan
+Statistika 4(3): 1675–86. doi:10.46306/lb.v4i3.461.
+
+Putra, Permana, Akim M H Pardede, dan Siswan Syahputra. 2022. “ANALISIS METODE K-
+NEAREST NEIGHBOUR (KNN) DALAM KLASIFIKASI DATA IRIS BUNGA.”
+Jurnal Teknik Informatika Kaputama (JTIK) 6(1).
+
+Tak, Ping, dan Peter Tang. Table-Lookup Algorithms for Elez entary Functions and their Error
+Analysis*.
+
+Wu, Sze Jung, Nagi Gebraeel, Mark A. Lawley, dan Yuehwern Yih. 2007. “A neural network
+integrated decision support system for condition-based optimal predictive maintenance
+policy.” IEEE Transactions on Systems, Man, and Cybernetics Part A:Systems and
+Humans 37(2): 226–36. doi:10.1109/TSMCA.2006.886368.
+
+Yuan, Ruixi, Zhu Li, Xiaohong Guan, dan Li Xu. 2010. “An SVM-based machine learning
+method for accurate Internet traffic classification.” Information Systems Frontiers 12(2):
+149–56. doi:10.1007/s10796-008-9131-2.
+
+Zhang, Shichao, Xuelong Li, Ming Zong, Xiaofeng Zhu, dan Debo Cheng. 2017. “Learning k
+for kNN Classification.” ACM Transactions on Intelligent Systems and Technology 8(3).
+doi:10.1145/2990508.
