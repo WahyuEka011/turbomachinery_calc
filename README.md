@@ -29,46 +29,42 @@ turbomachinery_calc/
 1. Buka GitHub repository ini.
 2. Klik tombol <> Code → pilih Open in Codespaces → pilih "CODESPACE_TURBOMACHINERY"
 3. Setelah Codespace terbuka:
-## Usage/Examples
-
-```javascript
+```bash
    // Pastikan posisi di direktori project utama
       cd turbomachinery_calc
 ```
-
 4. Build library Rust (librust_backend.so):
-   
-```javascript
+```bash
    cd rust_backend
    cargo build --release
 ```
-
 5. Build Qt Frontend:
-6.    
-```javascript
+```bash
 cd ../qt_frontend
    mkdir build
    cd build
    cmake ..
    make
 ```
-
-7. Jalankan aplikasi:
-```javascript
+6. Jalankan aplikasi:
+```bash
    ./QtRustIntegration
 ```
-
-8. 🎉 Aplikasi GUI Qt akan tampil!
-
-    Masukkan input data (Electricity, RPM, Steam Pressure, Vibration).
-    Klik Predict untuk mendapatkan hasil prediksi kondisi turbin.
-    Prediksi juga menampilkan grafik!
+7. 🎉 Aplikasi GUI Qt akan tampil!
+8. Masukkan input data (Surface Temperature, Steam Temperature, RPM, Torque, Vibration).
+9. Klik Predict untuk mendapatkan hasil prediksi kondisi turbin.
+10. Prediksi juga menampilkan grafik!
 
 ### 🚀 Cara Menjalankan Proyek (BACKEND TESTING)
 1. Buka File lalu ketik pada terminal
-```javascript
+```bash
 pyhton3 qt_frontend.py
 ```
+2. 🎉 Aplikasi GUI Qt5 Py akan tampil!
+8. Masukkan input data (Surface Temperature, Steam Temperature, RPM, Torque, Vibration).
+9. Klik Predict untuk mendapatkan hasil prediksi kondisi turbin.
+10. Prediksi juga menampilkan grafik!
+    
 ### 📚 Penjelasan Teknis
 1. Rust Backend:
     1. Berisi logika ANN.
@@ -86,6 +82,34 @@ pyhton3 qt_frontend.py
     2. Qt menggunakan CMakeLists.txt untuk link ke libturbomachinery_calc.so.
     3. Fungsi Rust diekspor ke Qt menggunakan deklarasi extern "C".
 
+###🔧 Integrasi Rust dengan Qt Python (PySide6)
+###🧠 Tujuan Integrasi
+Aplikasi ini memanfaatkan kekuatan Rust (kecepatan + safety) untuk:
+1. Model Machine Learning (ANN/SVM/kNN)
+2. Training cepat
+3. Prediksi dan visualisasi akurat
+Namun untuk antarmuka pengguna, digunakan Python + Qt karena:
+1. Qt mudah dibuat GUI-nya
+2. Python fleksibel untuk load CSV & kontrol logika aplikasi
+
+###🔄 Cara Integrasi Rust ↔ Python (Qt)
+1. Rust sebagai standalone binary
+```bash
+cargo build --release
+```
+2. Python memanggil Rust via subprocess
+3. Di file ui_app.py, Python memanggil executable Rust saat user klik tombol "Train":
+```python
+import subprocess
+subprocess.Popen(["./target/release/model_binary"])
+```
+4. 🔍 Load Dataset
+5. `ui_app.py` menggunakan Python `csv.reader` untuk membuka dataset
+6. Label dalam file bisa berupa teks seperti `"No Failure"`, `"Power Failure"`, `"Overheat"` — akan diproses lebih lanjut sesuai kebutuhan model
+7. 🎨 Visualisasi
+```bash
+output/prediksi_scatter.png
+```
 ### ⚙️ Dependensi
 1. Rust (stable version)
 2. Cargo (built-in Rust package manager)
