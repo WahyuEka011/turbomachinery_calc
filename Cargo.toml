@@ -1,0 +1,19 @@
+[package]
+name = "turbomachinery_qtpyth"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "turbomachinery_qtpyth"  # Must match Python import name
+crate-type = ["cdylib"]  # Still needed for Python integration
+
+[dependencies]
+pyo3 = { version = "0.21", features = ["extension-module"] }
+csv = "1.1"
+ndarray = { version = "0.15", features = ["serde"] }
+ndarray-rand = "0.14"
+rand = "0.8.5"
+plotters = "0.3.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+lazy_static = "1.4.0"
