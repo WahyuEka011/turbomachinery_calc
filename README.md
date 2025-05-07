@@ -25,29 +25,50 @@ turbomachinery_calc/
 └── README.md          # Penjelasan project
 ```
 
-### 🚀 Cara Menjalankan Proyek (Via GitHub Codespaces)
+### 🚀 Cara Menjalankan Proyek (BACKEND TESTING)
 1. Buka GitHub repository ini.
 2. Klik tombol <> Code → pilih Open in Codespaces → pilih "CODESPACE_TURBOMACHINERY"
 3. Setelah Codespace terbuka:
+## Usage/Examples
+
+```javascript
    // Pastikan posisi di direktori project utama
       cd turbomachinery_calc
+```
+
 4. Build library Rust (librust_backend.so):
+   
+```javascript
    cd rust_backend
    cargo build --release
+```
+
 5. Build Qt Frontend:
-6. cd ../qt_frontend
+6.    
+```javascript
+cd ../qt_frontend
    mkdir build
    cd build
    cmake ..
    make
+```
+
 7. Jalankan aplikasi:
+```javascript
    ./QtRustIntegration
+```
+
 8. 🎉 Aplikasi GUI Qt akan tampil!
 
     Masukkan input data (Electricity, RPM, Steam Pressure, Vibration).
     Klik Predict untuk mendapatkan hasil prediksi kondisi turbin.
     Prediksi juga menampilkan grafik!
 
+### 🚀 Cara Menjalankan Proyek (BACKEND TESTING)
+1. Buka File lalu ketik pada terminal
+```javascript
+pyhton3 qt_frontend.py
+```
 ### 📚 Penjelasan Teknis
 1. Rust Backend:
     1. Berisi logika ANN.
