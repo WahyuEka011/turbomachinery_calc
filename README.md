@@ -8,6 +8,7 @@ Rust bertugas melakukan komputasi backend, sedangkan Qt5 bertugas sebagai antarm
 Seluruh proyek dapat langsung dicoba melalui GitHub Codespaces!
 
 ### Struktur Project ini :
+```bash
 turbomachinery_calc/
 ├── rust_backend/      # Backend Rust (ANN, prediksi, dsb.)
 │   ├── src/
@@ -22,6 +23,7 @@ turbomachinery_calc/
 │   ├── homepagewindow.cpp
 │   └── CMakeLists.txt
 └── README.md          # Penjelasan project
+```
 
 ### 🚀 Cara Menjalankan Proyek (Via GitHub Codespaces)
 1. Buka GitHub repository ini.
