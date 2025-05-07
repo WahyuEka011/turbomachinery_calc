@@ -7,6 +7,23 @@ Proyek ini adalah integrasi Rust dan Qt untuk mensimulasikan prediksi kondisi tu
 Rust bertugas melakukan komputasi backend, sedangkan Qt5 bertugas sebagai antarmuka pengguna (GUI).
 Seluruh proyek dapat langsung dicoba melalui GitHub Codespaces!
 
+
+## 🏫 Institution
+**Institut Teknologi Sepuluh Nopember (ITS)**  
+Department of Instrumentation Engineering  
+Under the supervision of: **Ahmad Radhy, S.Si., M.Si**
+
+---
+
+## 👥 Group Members
+| Name                                   | Student ID     |
+|----------------------------------------|----------------|
+| Muhammad Wahyu Eka Setyabudi           | 2042221011     |
+| Lailatul Tashi Ah Arrohmah             | 2042221110     |
+| Dhika Ayu Putrianti                    | 2042221131     |
+
+---
+   
 ### Struktur Project ini :
 ```bash
 turbomachinery_calc/
